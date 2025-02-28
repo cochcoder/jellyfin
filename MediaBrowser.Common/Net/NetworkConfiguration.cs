@@ -173,4 +173,10 @@ public class NetworkConfiguration
     /// Gets or sets a value indicating whether <seealso cref="RemoteIPFilter"/> contains a blacklist or a whitelist. Default is a whitelist.
     /// </summary>
     public bool IsRemoteIPFilterBlacklist { get; set; }
+
+    /// <summary>
+    /// Gets or sets the global limit for streaming bitrate in bits per second.
+    /// This limit is shared across all streams. Default 0 (unlimited).
+    /// </summary>
+    public int GlobalStreamingBitrateLimit { get; set; }
 }
